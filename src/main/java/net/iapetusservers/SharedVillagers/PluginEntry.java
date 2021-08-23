@@ -7,8 +7,8 @@ import org.bukkit.plugin.java.JavaPlugin;
  * Shares cured villager benefits with all players.
  *
  * @author iapetusservers
- * @version 1.0-SNAPSHOT
- * @since 1.0-SNAPSHOT
+ * @version 0.1
+ * @since 0.1
  */
 public class PluginEntry extends JavaPlugin
 {
