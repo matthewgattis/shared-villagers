@@ -2,13 +2,14 @@ plugins {
     id 'java'
 }
 
-group 'me.alexpado.pmc'
+group 'net.iapetusservers.SharedVillagers'
 version '1.0-SNAPSHOT'
 
 // === Change this to match the workspace defined inside the start.sh script.
 String workspace = '.papermc'
 
-sourceCompatibility = 1.8
+sourceCompatibility = 16
+targetCompatibility = 16
 
 repositories() {
     mavenCentral()
@@ -16,10 +17,12 @@ repositories() {
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-    implementation group: 'com.destroystokyo.paper', name: 'paper-api', version: '1.14.4-R0.1-SNAPSHOT'
+    compileOnly 'io.papermc.paper:paper-api:1.17-R0.1-SNAPSHOT'
+    //testCompile group: 'junit', name: 'junit', version: '4.12'
+    //implementation group: 'com.destroystokyo.paper', name: 'paper-api', version: '1.14.4-R0.1-SNAPSHOT'
 }
 
+/*
 jar {
     String userHome = System.properties['user.home']
     destinationDirectory = file("$userHome/$workspace/plugins")
@@ -29,3 +32,4 @@ jar {
         configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
     }
 }
+*/

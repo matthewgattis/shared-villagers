@@ -1,3 +1,4 @@
-main: "me.alexpado.pmc.PluginEntry"
+main: "net.iapetusservers.SharedVillagers.PluginEntry"
 version: "1.0"
-name: "PaperMC-Starter-Plugin"
+api-version: "1.17"
+name: "SharedVillagers"
