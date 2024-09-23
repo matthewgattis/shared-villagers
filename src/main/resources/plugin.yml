@@ -2,3 +2,7 @@ name: SharedVillagers
 version: '1.0-SNAPSHOT'
 main: org.iapetusservers.sharedVillagers.SharedVillagers
 api-version: '1.21'
+commands:
+  configure:
+    description: Configure settings
+    permission: sharedvillagers.configure
