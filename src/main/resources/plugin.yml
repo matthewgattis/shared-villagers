@@ -1,4 +1,8 @@
-main: "net.iapetusservers.SharedVillagers.PluginEntry"
-version: "0.1"
-api-version: "1.17"
-name: "SharedVillagers"
+name: SharedVillagers
+version: '1.0-SNAPSHOT'
+main: org.iapetusservers.sharedVillagers.SharedVillagers
+api-version: '1.21'
+commands:
+  configure:
+    description: Configure settings
+    permission: sharedvillagers.configure
