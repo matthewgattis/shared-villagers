@@ -19,7 +19,7 @@ public class Console {
             return;
 
         if (getSettings().get().isConsole())
-            Bukkit.getConsoleSender().sendMessage(message);
+            Bukkit.getConsoleSender().sendMessage("§7" + message);
 
         if (!getSettings().get().getPlayers().isEmpty()) {
             Server server = Bukkit.getServer();
@@ -27,7 +27,7 @@ public class Console {
             getSettings().get().getPlayers().stream()
                     .map(server::getPlayer)
                     .filter(Objects::nonNull)
-                    .forEach(x -> x.sendMessage(message));
+                    .forEach(x -> x.sendMessage("§7" + message));
         }
     }
 
